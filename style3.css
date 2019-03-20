@@ -1,0 +1,347 @@
+body, html {
+    background-image: linear-gradient(rgba(255, 0, 0, 0.509), rgba(255, 225, 0, 0.55));
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* body {
+    overflow-x: hidden;
+} */
+
+.container {
+    /* background-color: rgb(244, 224, 75); */
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: fit-content;
+    z-index: 2;
+    /* overflow-x: hidden; */
+}
+
+.one {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 1rem;
+}
+
+#test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    text-align: center;
+    color: white;
+    background-color: rgb(140, 8, 8);
+    padding: 1rem;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#onepointfive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(95, 22, 126);
+    padding: 1rem;
+    width: 50vw;
+    z-index: 10;
+    position: relative;
+}
+
+#one .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.intro .title {
+    font-size: 250px;
+    margin-bottom: 10px;
+}
+
+.intro .begin {
+    font-size: 30px;
+}
+
+#two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    text-align: center;
+    color: white;
+    /* background-color: red; */
+    margin-left: 0;
+    z-index: 2;
+}
+
+#two .fate {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fate .title {
+    font-size: 250px;
+}
+
+img {
+    position: absolute;
+    margin-bottom: 400px;
+}
+
+.rellax {
+    /* color: white; */
+}
+
+.hidden {
+    display: none;
+}
+
+.bush {
+    bottom: 0;
+    position: absolute;
+    background-image: url('https://t1.rbxcdn.com/133b18b0222d94ccfb6124c367063914');
+    /* display: block; */
+    /* width: 20000px; */
+    width: 100%;
+    height: 300px;
+    float: left;
+    background-repeat: repeat-x;
+    z-index: 100;
+    /* margin: 0; */
+    opacity: 1;
+}
+
+.clouds {
+    position: absolute;
+    background-image: url('https://banner2.kisspng.com/20180520/jxx/kisspng-cloud-drawing-clip-art-5b01794c10bb13.6589953115268232440685.jpg');
+    display: block;
+    /* width: 20000px; */
+    height: 300px;
+    background-repeat: repeat-x;
+    z-index: 100;
+    margin: 0;
+    opacity: 0.1;
+}
+
+/* tests */
+
+.hideme {
+    /* opacity:0; */
+    display: none;
+}
+
+#hider {
+    opacity: 0;
+    z-index: 10;
+    color: white;
+    font-size: 300px;
+    margin: auto 0;
+}
+
+.block {
+    display: block
+}
+
+/* speech bubble */
+
+.speech-bubble {
+    width: 500px;
+    background-color: rgb(250, 250, 250);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+    height: 30%;
+    margin: auto 100px;
+    /* display: none; */
+    opacity: 1;
+    z-index: 6;
+    transition: 0.5s;
+}
+
+.speech-text {
+    height: 55%;
+}
+  
+p {
+    padding: 0px 0px 10px 0px;
+    border-bottom:1px solid #50888e;
+}
+
+a {
+    text-decoration: none;
+}
+
+.arrow {
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+}
+
+.arrow:active {
+    background-color: rgb(14, 14, 101);
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.left {
+    opacity: 100%;
+    display: 'block'
+}
+
+.right {
+    opacity: 100%;
+    display: 'block'
+}
+
+/* .hidden {
+    display: none;
+}
+*/
+.first {
+    display: '';
+    /* opacity: 100%; */
+}
+
+.second {
+    display: none;
+}
+
+.third {
+    display: none;
+}
+
+.water {
+    position: absolute;
+    background-image: url('https://pixy.org/src/6/63921.png');
+    background-repeat: repeat-x;
+    /* width: 20000px; */
+    height: 200px;
+    margin: 0;
+    display: block;
+    z-index: 1;
+    bottom: 1;
+}
+
+.hero {
+    background-image: url("https://static1.squarespace.com/static/55937cd5e4b06dafe082a6e6/t/5b2ae771f950b7ac4551547c/1529538499386/Web.jpg?format=1500w");
+    width: 400px;
+    height: 1000px;
+    margin: auto 0;
+}
+
+.tenets {
+    font-size: 200px;
+    text-align: center;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    background-color: bisque;
+    padding: 0 10%;
+}
+
+/* .menu-box {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; 
+} */
+
+.list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* background-color: yellow; */
+    margin: 0 20px;
+    /* flex-grow: 1 */
+}
+
+.list a {
+    margin: 0 20px;
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.damn {
+    color: white;
+}
+
+#tenet-one {
+    /* background-color: rgb(191, 207, 15); */
+}
+
+#tenet-two {
+    /* background-color: rgb(134, 145, 16); */
+}
+
+#tenet-three {
+    /* background-color: rgb(153, 165, 16); */
+}
+
+#tenet-three {
+    /* background-color: rgb(169, 184, 1); */
+}
+
+#tenet-four {
+    /* background-color: rgb(90, 184, 8); */
+}
+
+#tenet-five {
+    /* background-color: rgb(90, 184, 8); */
+}
+
+#tenet-six {
+    /* background-color: rgb(75, 147, 13); */
+}
+
+#tenet-seven {
+    /* background-color: rgb(24, 143, 1); */
+}
+
+#tenet-eight {
+    /* background-color: rgb(0, 133, 42); */
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+}

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="animate.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" media="screen" href="assets/jquery-sakura.min.css"/>
+    <link rel="stylesheet" href="flickity.css" media="screen">
 </head>
 <body>
     <nav class="nav">
@@ -92,7 +93,7 @@
     <div id="parallax1" class="parallax rellax" data-rellax-speed="0">
         <!-- <div class="route"> -->
         <!-- <div class="route-way"> -->
-            <p class="brushstroke rellax" data-rellax-speed="-1" 
+            <p class="brushstroke rellax" data-rellax-speed="-1.5" 
             data-aos="fade-up"
             data-aos-delay="10"
             data-aos-duration="500"
@@ -100,52 +101,40 @@
             data-aos-mirror="true"
             data-aos-once="false"
             >LEARN THE WAYS OF BUSHIDO</p>
-        <!-- </div> -->
-        <!-- <div class="route-way">
-            <p class="brushstroke rellax" data-rellax-speed="-1" 
-            data-aos="fade-up"
-            data-aos-delay="10"
-            data-aos-duration="500"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="false"
-            >FIND SAMURAI MEDIA</p>
-        </div> -->
-        <!-- </div> -->
     </div>
 
     <div id="choose" class="choose">
         <div class="choose-one">
-            <div class="overlay"></div>                 <!---<p>R</p><p>E</p><p>C</p><p>T</p><p>I</p><p>T</p><p>U</p><p>D</p><p>E</p>-->
+            <div class="overlay"></div>
             <div class="tenet-button"><a data-scroll href="#tenet-one"><h2 class="vertical">RECTITUDE</h2></a></div>
         </div>
         <div class="choose-two">
             <div class="overlay"></div>
-            <div class="tenet-button"><a data-scroll href="#tenet-two">Courage</a></div>
+            <div class="tenet-button"><a data-scroll href="#tenet-two"><h2 class="vertical">COURAGE</h2></a></div>
         </div>
         <div class="choose-three">
             <div class="overlay"></div>
-            <div class="tenet-button"><a data-scroll href="#tenet-three">Benevolence</a></div>
+            <div class="tenet-button"><a data-scroll href="#tenet-three"><h2 class="vertical">BENEVOLENCE</h2></a></div>
         </div>
         <div class="choose-four">
             <div class="overlay"></div>
-            <div class="tenet-button"><a data-scroll href="#tenet-four">Respect</a></div>
+            <div class="tenet-button"><a data-scroll href="#tenet-four"><h2 class="vertical">RESPECT</h2></a></div>
         </div>
         <div class="choose-five">
             <div class="overlay"></div>
-            <div class="tenet-button"><a data-scroll href="#tenet-five">Honesty</a></div>
+            <div class="tenet-button"><a data-scroll href="#tenet-five"><h2 class="vertical">HONESTY</h2></a></div>
         </div>
         <div class="choose-six">
             <div class="overlay"></div>
-            <div class="tenet-button"><a data-scroll href="#tenet-six">Honor</a></div>
+            <div class="tenet-button"><a data-scroll href="#tenet-six"><h2 class="vertical">HONOR</h2></a></div>
         </div>
         <div class="choose-seven">
             <div class="overlay"></div>
-            <div class="tenet-button"><a data-scroll href="#tenet-seven">Loyalty</a></div>
+            <div class="tenet-button"><a data-scroll href="#tenet-seven"><h2 class="vertical">LOYALTY</h2></a></div>
         </div>
         <div class="choose-eight">
             <div class="overlay"></div>
-            <div class="tenet-button"><a data-scroll href="#tenet-eight">Self-Control</a></div>
+            <div class="tenet-button"><a data-scroll href="#tenet-eight"><h2 class="vertical">SELF <span class="dash">-</span> CONTROL</h2></a></div>
         </div>
     </div>
 
@@ -441,7 +430,7 @@
 
     <div id="parallax9" class="parallax rellax" data-rellax-speed="0">
         <div class="route-way2">
-            <p class="brushstroke rellax" data-rellax-speed="0" 
+            <p class="brushstroke rellax" data-rellax-speed="-0.1" 
             data-aos="fade-up"
             data-aos-delay="10"
             data-aos-duration="500"
@@ -452,9 +441,45 @@
         </div>
     </div>
 
-    <div id="moviePage" class="page"></div>
+    <div id="moviePage" class="tenet-page">
+        <!-- <div class="carousel-height"><img class="poster-height" src='https://image.tmdb.org/t/p/original/oSqIeS1nEiWGWNWuQXokzscI3X2.jpg'></div> -->
+
+        <div class="last-pages">
+            <h1 class="tenet-title">Films</h1>
+            <div class="damn">
+                <div id="dopery">
+                </div>
+            </div>
+        </div>
+        <!-- <main class="info">
+            <div class="hero-image-container">
+                <div class="hero-image"></div>
+            </div>
+            <div class="info-info">
+                <h1 class="tenet-title">Self-Control</h1>
+                <div class="speech-bubble">
+                    <div class="speech-text">
+                        <p class="first">Bushido teaches that men should behave according to an absolute moral standard, one that transcends logic. What’s right is right, and what’s wrong is wrong.</p>
+                        <p class="second">The difference between good and bad and between right and wrong are givens, not arguments subject to discussion or justification, and a man should know the difference. Finally, it is a man’s obligation to teach his children moral standards through the model of his own behavior.</p>
+                        <p class="third">The first objective of samurai education was to build up Character. The subtler faculties of prudence, intelligence, and dialectics were less important. Intellectual superiority was esteemed, but a samurai was essentially a man of action.</p>
+                    </div>
+                    <div class="arrow-container">
+                        <div class="arrow left"></div>
+                        <div class="arrow right"></div>
+                    </div>
+                </div>
+            </div>
+        </main> -->
+    </div>
+
     <div id="tvPage" class="page"></div>
     <div id="booksPage" class="page"></div>
+
+    <div id="credits" class="page"></div>
+
+    <!-- <audio autoplay loop controls>
+        <source src="audio/Sai Wai - Tattered Tactician (Lone Samurai Suzanami Intro).mp3" type="audio/mpeg">
+    </audio> -->
 
     <script src="scripts/jquery-3.3.1.js"></script>
     <!-- <script src="scripts/app.js"></script> -->
@@ -467,6 +492,7 @@
         AOS.init();
         console.log('AOS is running.')
     </script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/jquery-sakura.min.js"></script>
     <script>
         // domReady
@@ -486,24 +512,39 @@
         var scroll = new SmoothScroll('[data-easing="easeInOutQuart"]', {easing: 'easeInOutQuart'});
     </script>
 
+    <script src="scripts/flickity.min.js"></script>
+    <script>
+        $('#dopery').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true,
+        freeScroll: true,
+        wrapAround: true    
+    });
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/zl-fetch@2.1.8"></script>
     <script>
-        var moviesDiv = document.querySelector('#moviePage')
+        var moviesDiv = document.querySelector('#dopery')
         zlFetch('https://api.themoviedb.org/3/search/movie?api_key=2e4bf3ae7a9007a8ff8ac9fbfdeb67d5&language=en-US&query=samurai&page=1&include_adult=true')
         .then(res => listMovies(moviesDiv, res.body.results))
        
         function listMovies (listDiv, movies) {
-            // console.log(movies)
-            var ul = document.createElement('ul')
+            var main = document.createElement('div')
+            main.classList.add('dopery')
             movies.forEach(movie => {
-                var li = document.createElement('li')
-                li.innerHTML = `<p>${movie.title}</p>`
-                ul.append(li)
+                var div = document.createElement('div')
+                div.classList.add('carousel-height')
+                var img = document.createElement('img')
+                img.classList.add('poster-height')
+                img.setAttribute("src", `https://image.tmdb.org/t/p/original/${movie.poster_path}`)
+                div.append(img)
+                main.append(div)
             })
-            listDiv.append(ul)
+            moviesDiv.append(main)
         }
     </script>
-    <script>
+    <!-- <script>
         var tvDiv = document.querySelector('#tvPage')
         zlFetch('https://api.themoviedb.org/3/search/tv?api_key=2e4bf3ae7a9007a8ff8ac9fbfdeb67d5&language=en-US&query=samurai&page=1')
         .then(res => listTV(tvDiv, res.body.results))
@@ -534,6 +575,6 @@
             })
             listDiv.append(ul)
         }
-    </script>
+    </script> -->
 </body>
 </html>

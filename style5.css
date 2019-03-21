@@ -56,7 +56,13 @@ body, html {
 
 .vertical {
     width: 10px;
+    line-height: 2;
     word-wrap: break-word;
+    text-align: center;
+}
+
+.dash {
+    opacity: 0;
 }
 
 .parallax {
@@ -305,11 +311,12 @@ a {
 .tenet-button {
     position: absolute;
     color: white;
-    left: auto;
-    top: auto;
+    /* left: auto;
+    top: auto; */
+    margin: auto;
     padding: 10px 20px;
     font-family: 'glades';
-    text-align: center;
+    text-align: inherit;
     font-size: 100%;
     width: 100px;
     opacity: 0;
@@ -362,4 +369,43 @@ a {
 .choose-eight {
     background-color: rgb(128, 0, 255);
     flex-grow: 1;
+}
+
+.damn {
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: 0 auto;
+}
+
+.carousel-height {
+    height: 300px;
+}
+
+.poster-height {
+    max-height: 100%;
+}
+
+.poster-height:hover {
+    opacity: 0.5;
+}
+
+.last-pages {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.carousel-cell {
+    width: 100%; /* full width */
+    height: 160px; /* height of carousel */
+    margin-right: 10px;
+}
+
+.dopery {
+    display: flex;
+    max-width: 100%;
+    overflow-x: scroll;
 }

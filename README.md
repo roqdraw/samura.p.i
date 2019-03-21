@@ -12,6 +12,7 @@
 6. smooth-scroll.js
 7. aos.js
 8. sakura.js
+9. zlFetch
 
 #### API's
 1. The Movie Database

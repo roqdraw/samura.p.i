@@ -345,3 +345,7 @@ a {
     color: rgb(0, 0, 0);
     padding: 1rem;
 }
+
+.title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

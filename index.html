@@ -4,70 +4,613 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>SAMURA.P.I.</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/flickity.css" media="screen">
+    <link type="text/css" rel="stylesheet" media="screen" href="assets/jquery-sakura.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-
-
-<!-- <body> -->
-    <!-- You can control the scrolling speed by adding 'data-stellar-background-ratio'  -->
-    <!-- Both divs have 0.5 scroll rate = Background will scroll 50% slower than the page -->
-    <!-- Adjust offset using 'data-stellar-vertical-offset' -->
-
-    <!-- <div id="bg" data-stellar-background-ratio="0.5"></div> -->
-
-    <!-- <div id="pic1" data-stellar-ratio="0.5"> -->
-        <!-- <img src='https://static1.squarespace.com/static/55937cd5e4b06dafe082a6e6/t/5b2a43dff950b7e84b9743c8/1529539537058/Discovery+copy.png?format=2500w' alt=""> -->
-    <!-- </div> -->
-    <!-- <div id="pic2" data-stellar-ratio="1" data-stellar-vertical-offset="100"></div>
-    <div id="pic3" data-stellar-ratio="3">
-        <img src='https://static1.squarespace.com/static/55937cd5e4b06dafe082a6e6/t/5b2a443788251ba2adbcaf46/1529632946357/Web.jpg?format=1500w' alt="">
-    </div>
-    <div id="pic4" data-stellar-ratio="2" data-stellar-vertical-offset="100"></div> -->
-    <!-- <div id="mask"></div> -->
-
-    <!-- <div id="pic1" class="rellax" data-rellax-speed="0"></div>
-    <div id="pic2" class="rellax" data-rellax-speed="-4"></div>
-    <div id="pic3" class="rellax" data-rellax-speed="7"></div> -->
-
-    <!-- <div class="rellax">I’m that default chill speed of "-2"</div> -->
-    
-    <!-- <script src="scripts/jquery-3.3.1.js"></script>
-    <script src="scripts/jquery.stellar.min.js"></script> -->
-
-    <!-- Call the jQuery-Migrate plugin to simplify the transition from older versions of jQuery to newer ones. 
-        The plugin restores deprecated features and behaviors so that older code will still run properly on the current jQuery version and later.
-        Has to be after you call jQuery.  -->
-    <!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script> -->
-    
-    <!-- Initialize Stellar.js by calling stellar() method on the element you want to create the parallax effect -->
-    <!-- <script>$('body').stellar({
-        verticalScrolling: false
-          });
-    </script> -->
-
-    <!-- <script src="scripts/rellax.min.js"></script>
-    <script>
-            // Accepts any class name
-            var rellax = new Rellax('.rellax', {
-                speed: -2,
-                center: false,
-                wrapper: null,
-                round: true,
-                vertical: false,
-                horizontal: true
-            });
-    </script> -->
-<!-- </body> -->
-
 <body>
-    <div id="container">
-        <div id="container2">
-            <div class="box one"><div>1</div></div>
-            <div class="box two"><div>2</div></div>
-            <div class="box three"><div>3</div></div>
-            <div class="box four"><div>Last</div></div>
+    <nav class="nav">
+        <a class="nav-link" href="#section-one">Home</a>
+        <a class="nav-link" href="#section-two">About</a>
+        <a class="nav-link" href="#choose">Tenets</a>
+        <a class="nav-link" href="#tenet-one">義</a>
+        <a class="nav-link" href="#tenet-two">勇</a>
+        <a class="nav-link" href="#tenet-three">仁</a>
+        <a class="nav-link" href="#tenet-four">礼</a>
+        <a class="nav-link" href="#tenet-five">誠</a>
+        <a class="nav-link" href="#tenet-six">名誉</a>
+        <a class="nav-link" href="#tenet-seven">忠義</a>
+        <a class="nav-link" href="#tenet-eight">自制</a>
+        <a class="nav-link" href="#moviePage">Films</a>
+        <a class="nav-link" href="#tvPage">TV Series</a>
+        <a class="nav-link" href="#booksPage">Books</a>
+        <a class="nav-link" href="#credits">Credits</a>
+    </nav>
+
+    <div id="section-one" class="page">
+        <div class="intro">
+            <p class="title"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                data-aos-mirror="true"
+                data-aos-once="false">
+                    SAMURA.P.I.</p>
         </div>
     </div>
+
+    <div id="section-two" class="page rellax" data-rellax-speed="0">
+        <main class="about">
+            <p class="body-title">About</p>
+            <div class="info">
+                <div class="intro-about">
+                    <p class="body-heading">What the heck is SamurA.P.I.?</p>
+                    <p class="body-para">SamurA.P.I. is an app for all those who are interested in the way of the samurai and can learn more about the philosophy about the great Japanese warriors.
+                        This little turf on the internet provides information about 'Bushido', the philosophy and the code of conduct the samurai devoted themselves to uphold in their lives and to share various media where people can discover more about this code.
+                        It was started by an average guy who had an inkling of an idea about wanting to congregate and share one of his many interests with the world by creating a website where people can learn about the warriors.
+                    </p>
+                    <br />
+                    <p class="body-heading">Why the name SamurA.P.I.?</p>
+                    <p class="body-para">The average guy who built this app is also a budding web developer, who has been working with API's: Application Programming Interface, where it allows applications to communicate with one another.
+                        It's basically an access point to an app that can access a database. So along with samurai philosophy, the average guy likes his terrible puns and wordplays.
+                        He built this app intended as an access point to all things samurai related.
+                        And yes, he is aware it sounds dangerously close to 'Summer of a P.I.'
+                    </p>
+                </div>
+
+                <div id="first-sam" class="hero-image" 
+                    data-aos="fade-left"
+                    data-aos-delay="50"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                ></div>
+            </div>
+        </main>
+    </div>
+
+    <div id="parallax0" class="parallax"></div>
+
+    <div id="section-two" class="page rellax" data-rellax-speed="0">
+        <main class="about">
+            <p class="body-title">What is Bushido?</p>
+            <div class="info">
+                <div id="second-sam" class="hero-image" 
+                    data-aos="fade-right"
+                    data-aos-delay="50"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                ></div>
+                <div class="intro-about">
+                        <p class="body-para">Bushido was the code for Japan's warrior classes from perhaps as early as the 8th century through modern times. The word "bushido" comes from the Japanese roots "bushi" meaning "warrior," and "do" meaning "path" or "way." Literally, then, it can be translated as the "way of the warrior." 
+                    Bushido was the code of conduct followed by Japan's samurai warriors and their precursors in feudal Japan, as well as much of central and east Asia. The principles of bushido emphasized honor, courage, frugality, skill in the martial arts, and loyalty to a warrior's master (daimyo) above all else. It is somewhat similar to the ideas of chivalry that knights followed in feudal Europe, and has just about as many bits of folklore—such as the 47 Ronin of Japanese legend—that exemplify bushido as the European counterparts do of their knights.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="parallax1" class="parallax rellax" data-rellax-speed="0">
+            <p class="brushstroke rellax" data-rellax-speed="-1.5" 
+            data-aos="fade-up"
+            data-aos-delay="10"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            >LEARN THE WAYS OF BUSHIDO</p>
+    </div>
+
+    <div id="choose" class="choose">
+        <div class="choose-one">
+            <div class="overlay"></div>
+            <div class="tenet-button"><a data-scroll href="#tenet-one"><h1 class="kanji">義</h1><h1 class="vertical">RECTITUDE</h1></a></div>
+        </div>
+        <div class="choose-two">
+            <div class="overlay"></div>
+            <div class="tenet-button"><a data-scroll href="#tenet-two"><h1 class="kanji">勇</h1><h1 class="vertical">COURAGE</h1></a></div>
+        </div>
+        <div class="choose-three">
+            <div class="overlay"></div>
+            <div class="tenet-button"><a data-scroll href="#tenet-three"><h1 class="kanji">仁</h1><h1 class="vertical">BENEVOLENCE</h1></a></div>
+        </div>
+        <div class="choose-four">
+            <div class="overlay"></div>
+            <div class="tenet-button"><a data-scroll href="#tenet-four"><h1 class="kanji">礼</h1><h1 class="vertical">RESPECT</h1></a></div>
+        </div>
+        <div class="choose-five">
+            <div class="overlay"></div>
+            <div class="tenet-button"><a data-scroll href="#tenet-five"><h1 class="kanji">誠</h1><h1 class="vertical">HONESTY</h1></a></div>
+        </div>
+        <div class="choose-six">
+            <div class="overlay"></div>
+            <div class="tenet-button"><a data-scroll href="#tenet-six"><h1 class="kanji">名誉</h1><h1 class="vertical">HONOR</h1></a></div>
+        </div>
+        <div class="choose-seven">
+            <div class="overlay"></div>
+            <div class="tenet-button"><a data-scroll href="#tenet-seven"><h1 class="kanji">忠義</h1><h1 class="vertical">LOYALTY</h1></a></div>
+        </div>
+        <div class="choose-eight">
+            <div class="overlay"></div>
+            <div class="tenet-button"><a data-scroll href="#tenet-eight"><h1 class="kanji">自制</h1><h1 class="vertical">SELF <span class="dash">-</span> CONTROL</h1></a></div>
+        </div>
+    </div>
+
+    <div id="tenet-one" class="tenet-page">
+        <main class="info">
+            
+            <div class="info-info">
+                <p class="tenet-title">Rectitude</p>
+                <div class="speech-bubble">
+                    <div class="speech-text">
+                        <p class="first body-para">Be acutely honest throughout your dealings with all people. Believe in justice, not from other people, but from yourself. To the true warrior, all points of view are deeply considered regarding honesty, justice and integrity. Warriors make a full commitment to their decisions.</p>
+                        <p class="second body-para">Rectitude is one’s power to decide upon a course of conduct in accordance with reason, without wavering; to die when to die is right, to strike when to strike is right.</p>
+                        <p class="third body-para">Rectitude is the bone that gives firmness and stature. Without bones the head cannot rest on top of the spine, nor hands move nor feet stand. So without Rectitude neither talent nor learning can make the human frame into a samurai.</p>
+                    </div>
+                    <div class='choices'>
+                        <a class="jump" href="#choose">All Tenets</a>
+                        <a class="jump" href="#tenet-two">Next Tenet</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image-container">
+                <div data-aos="fade" data-aos-delay="20" data-aos-duration="1000" data-aos-mirror="true" data-aos-once="false" class="hero-image"></div>
+                <img class="zen-circle" 
+                        data-aos="zoom-in" 
+                        data-aos="zoom-in" 
+                        data-aos-delay="50"
+                        data-aos-duration="2000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        src="images/kisspng-brush-circle-stroke-brush-stroke-5abbda50c09118.4619251115222605607888.png" alt="">
+            </div>
+        </main>
+    </div>
+
+    <div id="parallax2" class="parallax"></div>
+
+    <div id="tenet-two" class="tenet-page">
+        <main class="info">
+            <div class="hero-image-container">
+                <div data-aos="fade" data-aos-delay="20" data-aos-duration="1000" data-aos-mirror="true" data-aos-once="false" class="hero-image"></div>
+                <img class="zen-circle" 
+                    data-aos="zoom-in" 
+                    data-aos-delay="50"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    src="images/kisspng-brush-circle-stroke-brush-stroke-5abbda50c09118.4619251115222605607888.png" alt="">
+            </div>
+            <div class="info-info">
+                <p class="tenet-title">Courage</p>
+                <div class="speech-bubble">
+                    <div class="speech-text">
+                        <p class="first body-para">Hiding like a turtle in a shell is not living at all. A true warrior must have heroic courage. It is absolutely risky. It is living life completely, fully and wonderfully. Heroic courage is not blind. It is intelligent and strong.</p>
+                        <p class="second body-para">Courage is worthy of being counted among virtues only if it’s exercised in the cause of Righteousness and Rectitude.</p>
+                        <p class="third body-para">Perceiving what is right and doing it not reveals a lack of Courage. Courage is doing what is right.</p>
+                    </div>
+                    <div class='choices'>
+                        <a class="jump" href="#tenet-one">Previous Tenet</a>
+                        <a class="jump" href="#choose">All Tenets</a>
+                        <a class="jump" href="#tenet-three">Next Tenet</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="parallax3" class="parallax"></div>
+
+    <div id="tenet-three" class="tenet-page">
+        <main class="info">
+            <div class="info-info">
+                <p class="tenet-title">Benevolence</p>
+                <div class="speech-bubble">
+                    <div class="speech-text">
+                        <p class="first body-para">Through intense training and hard work the true warrior becomes quick and strong. They are not as most people. They develop a power that must be used for good. They have compassion.</p>
+                        <p class="second body-para">They help their fellow men at every opportunity. If an opportunity does not arise, they go out of their way to find one.</p>
+                        <p class="third body-para">Love, magnanimity, affection for others, sympathy and pity, are traits of Benevolence, the highest attribute of the human soul.</p>
+                    </div>
+                    <div class='choices'>
+                        <a class="jump" href="#tenet-two">Previous Tenet</a>
+                        <a class="jump" href="#choose">All Tenets</a>
+                        <a class="jump" href="#tenet-four">Next Tenet</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div data-aos="fade" data-aos-delay="20" data-aos-duration="1000" data-aos-mirror="true" data-aos-once="false" class="hero-image"></div>
+                <img class="zen-circle" 
+                        data-aos="zoom-in" 
+                        data-aos="zoom-in" 
+                        data-aos-delay="50"
+                        data-aos-duration="2000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        src="images/kisspng-brush-circle-stroke-brush-stroke-5abbda50c09118.4619251115222605607888.png" alt="">
+            </div>
+        </main>
+    </div>
+
+    <div id="parallax4" class="parallax"></div>
+
+    <div id="tenet-four" class="tenet-page">
+        <main class="info">
+            
+            <div class="hero-image-container">
+                <div data-aos="fade" data-aos-delay="20" data-aos-duration="1000" data-aos-mirror="true" data-aos-once="false" class="hero-image"></div>
+                <img class="zen-circle" 
+                    data-aos="zoom-in" 
+                    data-aos-delay="50"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    src="images/kisspng-brush-circle-stroke-brush-stroke-5abbda50c09118.4619251115222605607888.png" alt="">
+            </div>
+
+            <div class="info-info">
+                <p class="tenet-title">Respect</p>
+                <div class="speech-bubble">
+                    <div class="speech-text">
+                        <p class="first body-para">True warriors have no reason to be cruel. They do not need to prove their strength.</p>
+                        <p class="second body-para">Warriors are not only respected for their strength in battle, but also by their dealings with others. The true strength of a warrior becomes apparent during difficult times.</p>
+                        <p class="third body-para">Politeness should be the expression of a benevolent regard for the feelings of others; it’s a poor virtue if it’s motivated only by a fear of offending good taste. In its highest form Politeness approaches love.</p>
+                    </div>
+                    <div class='choices'>
+                        <a class="jump" href="#tenet-three">Previous Tenet</a>
+                        <a class="jump" href="#choose">All Tenets</a>
+                        <a class="jump" href="#tenet-five">Next Tenet</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="parallax5" class="parallax"></div>
+
+    <div id="tenet-five" class="tenet-page">
+        <main class="info">
+            
+            <div class="info-info">
+                <p class="tenet-title">Honesty</p>
+                <div class="speech-bubble">
+                    <div class="speech-text">
+                        <p class="first body-para">When warriors say that they will perform an action, it is as good as done. Nothing will stop them from completing what they say they will do.</p>
+                        <p class="second body-para">They do not have to 'give their word'. They do not have to 'promise'. Speaking and doing are the same action.</p>
+                        <p class="third body-para">True samurai, according to author Nitobe, disdained money, believing that “men must grudge money, for riches hinder wisdom.” Thus children of high-ranking samurai were raised to believe that talking about money showed poor taste, and that ignorance of the value of different coins showed good breeding.</p>
+                    </div>
+                    <div class='choices'>
+                        <a class="jump" href="#tenet-four">Previous Tenet</a>
+                        <a class="jump" href="#choose">All Tenets</a>
+                        <a class="jump" href="#tenet-six">Next Tenet</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image-container">
+                <div data-aos="fade" data-aos-delay="20" data-aos-duration="1000" data-aos-mirror="true" data-aos-once="false" class="hero-image"></div>
+                <img class="zen-circle" 
+                        data-aos="zoom-in" 
+                        data-aos="zoom-in" 
+                        data-aos-delay="50"
+                        data-aos-duration="2000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        src="images/kisspng-brush-circle-stroke-brush-stroke-5abbda50c09118.4619251115222605607888.png" alt="">
+            </div>
+        </main>
+    </div>
+
+    <div id="parallax6" class="parallax"></div>
+
+    <div id="tenet-six" class="tenet-page">
+        <main class="info">
+            
+            <div class="hero-image-container">
+                <div data-aos="fade" data-aos-delay="20" data-aos-duration="1000" data-aos-mirror="true" data-aos-once="false" class="hero-image"></div>
+                <img class="zen-circle" 
+                    data-aos="zoom-in" 
+                    data-aos-delay="50"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    src="images/kisspng-brush-circle-stroke-brush-stroke-5abbda50c09118.4619251115222605607888.png" alt="">
+            </div>
+
+            <div class="info-info">
+                <p class="tenet-title">Honor</p>
+                <div class="speech-bubble">
+                    <div class="speech-text">
+                        <p class="first body-para">Warriors have only one judge of honor and character, and this is themselves. Decisions they make and how these decisions are carried out are a reflection of who they truly are. You cannot hide from yourself.</p>
+                        <p class="second body-para">The sense of Honor, a vivid consciousness of personal dignity and worth, characterized the samurai. He was born and bred to value the duties and privileges of his profession. </p>
+                        <p class="third body-para">Fear of disgrace hung like a sword over the head of every samurai. To take offense at slight provocation was ridiculed as ‘short-tempered'. </p>
+                    </div>
+                    <div class='choices'>
+                        <a class="jump" href="#tenet-five">Previous Tenet</a>
+                        <a class="jump" href="#choose">All Tenets</a>
+                        <a class="jump" href="#tenet-seven">Next Tenet</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="parallax7" class="parallax"></div>
+
+    <div id="tenet-seven" class="tenet-page">
+        <main class="info">
+            
+            <div class="info-info">
+                <p class="tenet-title">Loyalty</p>
+                <div class="speech-bubble">
+                    <div class="speech-text">
+                        <p class="first body-para">Warriors are responsible for everything that they have done and everything that they have said and all of the consequences that follow. They are immensely loyal to all of those in their care. To everyone that they are responsible for, they remain fiercely true.</p>
+                        <p class="second body-para">Economic reality has dealt a blow to organizational loyalty around the world. Nonetheless, true men remain loyal to those to whom they are indebted.</p>
+                        <p class="third body-para">Personal fidelity exists among all sorts of men: a gang of pickpockets swears allegiance to its leader. But only in the code of chivalrous Honor does Loyalty assume paramount importance.</p>
+                    </div>
+                    <div class='choices'>
+                        <a class="jump" href="#tenet-six">Previous Tenet</a>
+                        <a class="jump" href="#choose">All Tenets</a>
+                        <a class="jump" href="#tenet-eight">Next Tenet</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image-container">
+                <div data-aos="fade" data-aos-delay="20" data-aos-duration="1000" data-aos-mirror="true" data-aos-once="false" class="hero-image"></div>
+                <img class="zen-circle" 
+                        data-aos="zoom-in" 
+                        data-aos="zoom-in" 
+                        data-aos-delay="50"
+                        data-aos-duration="2000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        src="images/kisspng-brush-circle-stroke-brush-stroke-5abbda50c09118.4619251115222605607888.png" alt="">
+            </div>
+        </main>
+    </div>
+
+    <div id="parallax8" class="parallax"></div>
+
+    <div id="tenet-eight" class="tenet-page">
+        <main class="info">
+            <div class="hero-image-container">
+                <div data-aos="fade" data-aos-delay="20" data-aos-duration="1000" data-aos-mirror="true" data-aos-once="false" class="hero-image"></div>
+                <img class="zen-circle" 
+                    data-aos="zoom-in" 
+                    data-aos-delay="50"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    src="images/kisspng-brush-circle-stroke-brush-stroke-5abbda50c09118.4619251115222605607888.png" alt="">
+            </div>
+            <div class="info-info">
+                <p class="tenet-title">Self-Control</p>
+                <div class="speech-bubble">
+                    <div class="speech-text">
+                        <p class="first body-para">Bushido teaches that men should behave according to an absolute moral standard, one that transcends logic. What’s right is right, and what’s wrong is wrong.</p>
+                        <p class="second body-para">The difference between good and bad and between right and wrong are givens, not arguments subject to discussion or justification, and a man should know the difference. Finally, it is a man’s obligation to teach his children moral standards through the model of his own behavior.</p>
+                        <p class="third body-para">The first objective of samurai education was to build up Character. The subtler faculties of prudence, intelligence, and dialectics were less important. Intellectual superiority was esteemed, but a samurai was essentially a man of action.</p>
+                    </div>
+                    <div class='choices'>
+                        <a class="jump" href="#tenet-seven">Previous Tenet</a>
+                        <a class="jump" href="#choose">All Tenets</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="parallax9" class="parallax rellax" data-rellax-speed="0">
+        <div class="route-way2">
+            <p class="brushstroke rellax" data-rellax-speed="-0.1" 
+            data-aos="fade-up"
+            data-aos-delay="10"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            >SAMURAI MEDIA</p>
+        </div>
+    </div>
+
+    <div id="moviePage" class="media-page">
+        <div class="last-pages">
+            <p class="tenet-title">Films</p>
+            <div class="media-container" 
+                    data-aos="fade-up"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    >
+                <div id="movie-list">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tvPage" class="media-page">
+        <div class="last-pages">
+            <p class="tenet-title">TV Series</p>
+            <div class="media-container" 
+                    data-aos="fade-up"
+                    data-aos="fade-up"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    >
+                <div id="tv-list">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="booksPage" class="media-page">
+        <div class="last-pages">
+            <p class="tenet-title">Books</p>
+            <div class="media-container" 
+                    data-aos="fade-up"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    >
+                <div id="book-list">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="credits" class="page">
+        <div class="library">
+            <p class="credit-title" 
+                    data-aos="fade-up"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false">
+                    Credits</p>
+            <div class="lib-list">
+                <h3 class="body-heading" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">Libraries Used</h3>
+                <p><a class="jump-lib" data-aos="fade-up" data-aos-delay="10" data-aos-duration="1000" data-aos-easing="ease-in-out" href="https://jquery.com/">jQuery</a></p>
+                <p><a class="jump-lib" data-aos="fade-up" data-aos-delay="15" data-aos-duration="1000" data-aos-easing="ease-in-out" href="https://dixonandmoe.com/rellax/">Rellax</a></p>
+                <p><a class="jump-lib" data-aos="fade-up" data-aos-delay="20" data-aos-duration="1000" data-aos-easing="ease-in-out" href="https://michalsnik.github.io/aos//">AOS</a></p>
+                <p><a class="jump-lib" data-aos="fade-up" data-aos-delay="25" data-aos-duration="1000" data-aos-easing="ease-in-out" href="https://github.com/almightynay/jQuery-Sakura">jQuery Sakura</a></p>
+                <p><a class="jump-lib" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1000" data-aos-easing="ease-in-out" href="https://github.com/cferdinandi/smooth-scroll">Smooth Scroll</a></p>
+                <p><a class="jump-lib" data-aos="fade-up" data-aos-delay="35" data-aos-duration="1000" data-aos-easing="ease-in-out" href="https://flickity.metafizzy.co/">Flickity</a></p>
+                <p><a class="jump-lib" data-aos="fade-up" data-aos-delay="40" data-aos-duration="1000" data-aos-easing="ease-in-out" href="https://github.com/zellwk/zl-fetch">zl-fetch</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/jquery-3.3.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/zl-fetch@2.1.8"></script>
+    <script src="scripts/rellax.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scripts/smooth-scroll.polyfills.min.js"></script>
+    <script src="scripts/flickity.min.js"></script>
+    <script src="assets/jquery-sakura.min.js"></script>
+    <script>
+        // Controls rellax.js
+        var rellax = new Rellax('.rellax');
+
+        // Initializes AOS.js
+        AOS.init();
+        console.log('AOS is running.')
+
+        // Initializes Sakura.js
+        $(function() {
+            $('body').sakura();
+            console.log('sakura is DOM ready')
+        });
+
+        $(window).load(function() {
+            $('body').sakura();
+            console.log('sakura is window ready')
+        });
+        
+        // Controls Smooth-Scroll
+        var scroll = new SmoothScroll('[data-easing="easeInOutQuart"]', {easing: 'easeInOutQuart'});
+    </script>
+    <script>
+        // Gets movie posters from the TMDB app.
+        var moviesDiv = document.querySelector('#movie-list')
+        zlFetch('https://api.themoviedb.org/3/search/movie?api_key=2e4bf3ae7a9007a8ff8ac9fbfdeb67d5&language=en-US&query=samurai&page=1&include_adult=true')
+        .then(res => listMovies(moviesDiv, res.body.results))
+       
+        function listMovies (listDiv, movies) {
+            var movieList = document.querySelector('#movie-list')
+            movies.forEach(movie => {
+                if (movie.poster_path !== null) {
+                    var div = document.createElement('div')
+                    div.classList.add('carousel-height')
+                    var img = document.createElement('img')
+                    img.classList.add('poster-height')
+                    img.setAttribute("src", `https://image.tmdb.org/t/p/original/${movie.poster_path}`)
+                    div.append(img)
+                    movieList.append(div)
+                }
+            })
+            $('#movie-list').flickity({
+                cellAlign: 'left',
+                contain: true,
+                freeScroll: true,
+                wrapAround: true    
+            });
+        }
+    </script>
+    <script>
+        // Gets tv series posters from the TMDB app.
+        var tvDiv = document.querySelector('#tvPage')
+        zlFetch('https://api.themoviedb.org/3/search/tv?api_key=2e4bf3ae7a9007a8ff8ac9fbfdeb67d5&language=en-US&query=samurai&page=1')
+        .then(res => listTV(tvDiv, res.body.results))
+        
+        function listTV (listDiv, tvShows) {
+            var tvList = document.querySelector('#tv-list')
+            tvShows.forEach(tvShow => {
+                if (tvShow.poster_path !== null) {
+                    var div = document.createElement('div')
+                    div.classList.add('carousel-height')
+                    var img = document.createElement('img')
+                    img.classList.add('poster-height')
+                    img.setAttribute("src", `https://image.tmdb.org/t/p/original/${tvShow.poster_path}`)
+                    div.append(img)
+                    tvList.append(div)
+                }
+            })
+            $('#tv-list').flickity({
+                cellAlign: 'left',
+                contain: true,
+                freeScroll: true,
+                wrapAround: true    
+            });
+        }
+    </script>
+    <script>
+        // Gets book volume covers from the Google Books app.
+        var booksDiv = document.querySelector('#booksPage')
+        zlFetch('https://www.googleapis.com/books/v1/volumes?q=samurai&printType=books&maxResults=15&key=AIzaSyAwLGxNQqntI0-yaJ5DeFbudX_DrugiUK8')
+        .then(res => listBooks(booksDiv, res.body.items))
+
+        function listBooks (listDiv, books) {
+            var bookList = document.querySelector('#book-list')
+            books.forEach(book => {
+                if (book.volumeInfo.imageLinks.thumbnail !== null) {
+                    var div = document.createElement('div')
+                    div.classList.add('carousel-height')
+                    var img = document.createElement('img')
+                    img.classList.add('book-height')
+                    img.setAttribute("src", `${book.volumeInfo.imageLinks.thumbnail}`)
+                    div.append(img)
+                    bookList.append(div)
+                }
+            })
+            $('#book-list').flickity({
+                cellAlign: 'left',
+                contain: true,
+                freeScroll: true,
+                wrapAround: true    
+            });
+        }
+    </script>
 </body>
 </html>

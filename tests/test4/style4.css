@@ -1,0 +1,39 @@
+body {
+    margin:0 15vh
+}
+
+div {
+    width: 100vw;
+    height: 50vh;
+    float: left;
+}
+
+.container {
+    /* display: flex;
+    flex-direction: row;
+    background-color: blue;
+    align-items: center;
+    width: 5000px; */
+}
+
+/* div {
+    background-color: yellow;
+    margin: 20px;
+    float: left;
+} */
+
+.cnt {
+  width: 304px; /* 320px max-width on mobile with 8px margins */
+  height: 188px; /* width / 1.618 = golden ratio */
+  overflow: hidden;
+  background-color:#ccf;
+  position: relative;
+}
+.img {
+  position: absolute;
+  bottom: 0;
+  display:block;
+  width: 310px;
+  height: 197px;
+  background-image: url('http://www.tesco.com/christmas/2016/phase2/i/recipes-s5-gingerbread.jpg');
+}

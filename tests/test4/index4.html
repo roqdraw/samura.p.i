@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <!-- <div class="container"> -->
+        <h1>1. Parallax test with <a href="https://github.com/dixonandmoe/rellax">rellax.js</a></h1>
+        <p>2. Impressed with this super lightweight (871bytes gzipped), vanilla javascript script. It runs at a very smooth 60fps.</p>
+        <p>3. Scroll the page&hellip;</p>
+        
+        <div class=cnt>
+            4.<span class="img rellax" data-rellax-speed="-.4"></span>
+        </div>
+        
+        <p>5. Tried to parallax a background-image within it's container. Which will require considerable reworking to achieve.</p>
+        
+        
+        <div class="rellax">
+            6. I’m that default chill speed of "-2"
+        </div>
+        
+        <div class=cnt>
+            7. <span class="img rellax" data-rellax-speed="-.4"></span>
+        </div>
+        
+        <div class="rellax" data-rellax-speed="7">
+            8. I’m super fast!!
+        </div>
+        
+        <div class=cnt>
+            9. <span class="img rellax" data-rellax-speed="-.4"></span>
+        </div>
+        
+        <div class="rellax" data-rellax-speed="-4">
+        10. I’m extra slow and smooth
+        </div>
+        
+        <div class=cnt>
+            11. <span class="img rellax" data-rellax-speed="-.4"></span>
+        </div>
+    <!-- </div> -->
+
+    <script src="scripts/rellax.min.js"></script>
+    <script>var rellax = new Rellax('.rellax', {
+            vertical: true,
+            horizontal: false
+        });</script>
+</body>
+</html>

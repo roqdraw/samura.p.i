@@ -47,6 +47,8 @@ Animate On Scroll library using CSS3.
 Uses CSS3 animations and requestAnimationFrame to put a plethora of cherry blossom petals that drift and sway in the "wind" on websites.
 
 *[zlFetch]*(https://github.com/zellwk/zl-fetch)
+A library that abstracts away the `handleResponse` function so you can skip ahead to and handle both your data and errors without worrying about the response.
+
 zlFetch includes helpers for creating your request:
 * Query parameters
 * Authorization

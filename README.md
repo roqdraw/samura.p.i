@@ -1,4 +1,7 @@
 #SAMURA.P.I.
+
+View it here : https://roqdraw.github.io/samura.p.i/.
+
 ---
 ## About
 
@@ -13,6 +16,8 @@
 7. aos.js
 8. sakura.js
 9. zlFetch
+10. ~~slick.js~~
+11. flickity.js
 
 #### API's
 1. The Movie Database

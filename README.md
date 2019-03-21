@@ -33,20 +33,20 @@ A lightweight, vanilla javascript parallax library.
 
 #### Carousel Libraries
 ~~slick.js~~
-*[flickity.js]*(https://flickity.metafizzy.co/)
+*[flickity.js](https://flickity.metafizzy.co/)*
 Touch, responsive, flickable carousels library.
 
 ~scrollFade.js~
-*[smooth-scroll.js]*(https://github.com/cferdinandi/smooth-scroll)
+*[smooth-scroll.js](https://github.com/cferdinandi/smooth-scroll)*
 A lightweight script to animate scrolling to anchor links.
 
-*[aos.js]*(https://michalsnik.github.io/aos/)
+*[aos.js](https://michalsnik.github.io/aos/)*
 Animate On Scroll library using CSS3.
 
-*[sakura.js]*(https://github.com/almightynay/jQuery-Sakura)
+*[sakura.js](https://github.com/almightynay/jQuery-Sakura)*
 Uses CSS3 animations and requestAnimationFrame to put a plethora of cherry blossom petals that drift and sway in the "wind" on websites.
 
-*[zlFetch]*(https://github.com/zellwk/zl-fetch)
+*[zlFetch](https://github.com/zellwk/zl-fetch)*
 A library that abstracts away the `handleResponse` function so you can skip ahead to and handle both your data and errors without worrying about the response.
 
 zlFetch includes helpers for creating your request:

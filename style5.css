@@ -54,6 +54,11 @@ body, html {
 #section-two {
 }
 
+.vertical {
+    width: 10px;
+    word-wrap: break-word;
+}
+
 .parallax {
     height: 70%;
     background-attachment: fixed;

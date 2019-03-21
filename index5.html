@@ -117,7 +117,7 @@
     <div id="choose" class="choose">
         <div class="choose-one">
             <div class="overlay"></div>                 <!---<p>R</p><p>E</p><p>C</p><p>T</p><p>I</p><p>T</p><p>U</p><p>D</p><p>E</p>-->
-            <div class="tenet-button"><a data-scroll href="#tenet-one"><h2>R</h2><h2>E</h2><h2>C</h2><h2>T</h2><h2>I</h2><h2>T</h2><h2>U</h2><h2>D</h2><h2>E</h2></a></div>
+            <div class="tenet-button"><a data-scroll href="#tenet-one"><h2 class="vertical">RECTITUDE</h2></a></div>
         </div>
         <div class="choose-two">
             <div class="overlay"></div>
@@ -452,6 +452,10 @@
         </div>
     </div>
 
+    <div id="moviePage" class="page"></div>
+    <div id="tvPage" class="page"></div>
+    <div id="booksPage" class="page"></div>
+
     <script src="scripts/jquery-3.3.1.js"></script>
     <!-- <script src="scripts/app.js"></script> -->
     <script src="scripts/rellax.min.js"></script>
@@ -463,7 +467,6 @@
         AOS.init();
         console.log('AOS is running.')
     </script>
-    <!-- <script src="dist/basicScroll.min.js"></script> -->
     <script src="assets/jquery-sakura.min.js"></script>
     <script>
         // domReady
@@ -481,6 +484,56 @@
     <script src="scripts/smooth-scroll.polyfills.min.js"></script>
     <script>
         var scroll = new SmoothScroll('[data-easing="easeInOutQuart"]', {easing: 'easeInOutQuart'});
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/zl-fetch@2.1.8"></script>
+    <script>
+        var moviesDiv = document.querySelector('#moviePage')
+        zlFetch('https://api.themoviedb.org/3/search/movie?api_key=2e4bf3ae7a9007a8ff8ac9fbfdeb67d5&language=en-US&query=samurai&page=1&include_adult=true')
+        .then(res => listMovies(moviesDiv, res.body.results))
+       
+        function listMovies (listDiv, movies) {
+            // console.log(movies)
+            var ul = document.createElement('ul')
+            movies.forEach(movie => {
+                var li = document.createElement('li')
+                li.innerHTML = `<p>${movie.title}</p>`
+                ul.append(li)
+            })
+            listDiv.append(ul)
+        }
+    </script>
+    <script>
+        var tvDiv = document.querySelector('#tvPage')
+        zlFetch('https://api.themoviedb.org/3/search/tv?api_key=2e4bf3ae7a9007a8ff8ac9fbfdeb67d5&language=en-US&query=samurai&page=1')
+        .then(res => listTV(tvDiv, res.body.results))
+        
+        function listTV (listDiv, tvShows) {
+            // console.log(tvShows)
+            var ul = document.createElement('ul')
+            tvShows.forEach(tvShow => {
+                var li = document.createElement('li')
+                li.innerHTML = `<p>${tvShow.name}</p>`
+                ul.append(li)
+            })
+            listDiv.append(ul)
+        }
+    </script>
+    <script>
+        var booksDiv = document.querySelector('#booksPage')
+        zlFetch('https://www.googleapis.com/books/v1/volumes?q=samurai&printType=books&maxResults=15&key=AIzaSyAwLGxNQqntI0-yaJ5DeFbudX_DrugiUK8')
+        .then(res => listBooks(booksDiv, res.body.items))
+
+        function listBooks (listDiv, books) {
+            // console.log(books)
+            var ul = document.createElement('ul')
+            books.forEach(book => {
+                var li = document.createElement('li')
+                li.innerHTML = `<p>${book.volumeInfo.title}</p>`
+                ul.append(li)
+            })
+            listDiv.append(ul)
+        }
     </script>
 </body>
 </html>

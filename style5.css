@@ -74,6 +74,12 @@ body, html {
     background-attachment: fixed;
 }
 
+.library {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .media-page {
     display: flex;
     flex-direction: row;
@@ -114,6 +120,19 @@ body, html {
     padding-top: 20px;
     margin-top: 50px;
     margin: 0 30px;
+}
+
+.jump-lib {
+    color: rgb(255, 255, 255);
+    font-family: 'glades';
+    font-size: 30px;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.jump-lib:hover {
+    color: rgb(245, 58, 58);
+    text-shadow: black 2px 2px;
 }
 
 .vertical {
@@ -235,14 +254,26 @@ body, html {
 
 .nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     text-align: center;
-    width: 5vw;
-    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100vw;
+    height: 5vh;
     position: fixed;
-    background-color: red;
-    display: none;
+    background-color: rgb(0, 0, 0);
+    z-index: 100;
+}
+
+.nav-link {
+    transition-delay: 0.5s;
+    transition: 0.5s;
+    font-size: 15px;
+}
+
+.nav-link:hover {
+    font-size: 20px;
 }
 
 a {
@@ -273,9 +304,26 @@ a {
 }
 
 .hero-image {
+    /* background-image: url('https://purepng.com/public/uploads/large/purepng.com-samuraisamuraimilitarymedievalfighterwarriorarmorjapaneseclipart-1421526964667h2eoi.png'); */
+    background-image: url('images/ronin_small.png');
+    height: 640px;
+    width: 450px;
+    background-size:100% 100%;
+    z-index: 3;
+}
+
+#first-sam {
     background-image: url('https://purepng.com/public/uploads/large/purepng.com-samuraisamuraimilitarymedievalfighterwarriorarmorjapaneseclipart-1421526964667h2eoi.png');
-    height:640px;
-    width:330px;
+    height: 640px;
+    width: 330px;
+    background-size:100% 100%;
+    z-index: 3;
+}
+
+#second-sam {
+    background-image: url('http://pngimg.com/uploads/samurai/samurai_PNG28.png');
+    height: 640px;
+    width: 330px;
     background-size:100% 100%;
     z-index: 3;
 }
@@ -294,7 +342,14 @@ a {
 
 .tenet-title {
     font-family: 'glades';
+    font-size: 60px;
+}
+
+.credit-title {
+    font-family: 'glades';
     font-size: 50px;
+    color: white;
+    text-shadow: black 0px 5px;
 }
 
 .zen-circle {

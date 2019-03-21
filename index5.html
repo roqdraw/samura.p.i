@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Samura.P.I.</title>
+    <title>SAMURA.P.I.</title>
     <link rel="stylesheet" href="style5.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" media="screen" href="assets/jquery-sakura.min.css"/>
@@ -159,7 +159,7 @@
             </div>
 
             <div class="hero-image-container">
-                <div class="hero-image"></div>
+                <div data-aos="fade" data-aos-delay="20" data-aos-duration="1000" data-aos-mirror="true" data-aos-once="false" class="hero-image"></div>
                 <img class="zen-circle" 
                         data-aos="zoom-in" 
                         data-aos="zoom-in" 
@@ -178,7 +178,7 @@
     <div id="tenet-two" class="tenet-page">
         <main class="info">
             <div class="hero-image-container">
-                <div class="hero-image"></div>
+                <div data-aos="fade" data-aos-delay="20" data-aos-duration="1000" data-aos-mirror="true" data-aos-once="false" class="hero-image"></div>
                 <img class="zen-circle" 
                     data-aos="zoom-in" 
                     data-aos-delay="50"
@@ -226,7 +226,7 @@
                 </div>
             </div>
             <div class="hero-image-container">
-                <div class="hero-image"></div>
+                <div data-aos="fade" data-aos-delay="20" data-aos-duration="1000" data-aos-mirror="true" data-aos-once="false" class="hero-image"></div>
                 <img class="zen-circle" 
                         data-aos="zoom-in" 
                         data-aos="zoom-in" 
@@ -246,7 +246,7 @@
         <main class="info">
             
             <div class="hero-image-container">
-                <div class="hero-image"></div>
+                <div data-aos="fade" data-aos-delay="20" data-aos-duration="1000" data-aos-mirror="true" data-aos-once="false" class="hero-image"></div>
                 <img class="zen-circle" 
                     data-aos="zoom-in" 
                     data-aos-delay="50"
@@ -297,7 +297,7 @@
             </div>
 
             <div class="hero-image-container">
-                <div class="hero-image"></div>
+                <div data-aos="fade" data-aos-delay="20" data-aos-duration="1000" data-aos-mirror="true" data-aos-once="false" class="hero-image"></div>
                 <img class="zen-circle" 
                         data-aos="zoom-in" 
                         data-aos="zoom-in" 
@@ -317,7 +317,7 @@
         <main class="info">
             
             <div class="hero-image-container">
-                <div class="hero-image"></div>
+                <div data-aos="fade" data-aos-delay="20" data-aos-duration="1000" data-aos-mirror="true" data-aos-once="false" class="hero-image"></div>
                 <img class="zen-circle" 
                     data-aos="zoom-in" 
                     data-aos-delay="50"
@@ -368,7 +368,7 @@
             </div>
 
             <div class="hero-image-container">
-                <div class="hero-image"></div>
+                <div data-aos="fade" data-aos-delay="20" data-aos-duration="1000" data-aos-mirror="true" data-aos-once="false" class="hero-image"></div>
                 <img class="zen-circle" 
                         data-aos="zoom-in" 
                         data-aos="zoom-in" 
@@ -387,7 +387,7 @@
     <div id="tenet-eight" class="tenet-page">
         <main class="info">
             <div class="hero-image-container">
-                <div class="hero-image"></div>
+                <div data-aos="fade" data-aos-delay="20" data-aos-duration="1000" data-aos-mirror="true" data-aos-once="false" class="hero-image"></div>
                 <img class="zen-circle" 
                     data-aos="zoom-in" 
                     data-aos-delay="50"
@@ -510,13 +510,14 @@
     <script src="scripts/flickity.min.js"></script>
     <script src="assets/jquery-sakura.min.js"></script>
     <script>
+        // Controls rellax.js
         var rellax = new Rellax('.rellax');
-    </script>
-    <script>
+
+        // Initializes AOS.js
         AOS.init();
         console.log('AOS is running.')
-    </script>
-    <script>
+
+        // Initializes Sakura.js
         $(function() {
             $('body').sakura();
             console.log('sakura is DOM ready')
@@ -526,14 +527,11 @@
             $('body').sakura();
             console.log('sakura is window ready')
         });
-    </script>
-    
-    <script>
+        
+        // Controls Smooth-Scroll
         var scroll = new SmoothScroll('[data-easing="easeInOutQuart"]', {easing: 'easeInOutQuart'});
-    </script>
 
-    
-    <script>
+        // Gets movie posters from the TMDB app.
         var moviesDiv = document.querySelector('#movie-list')
         zlFetch('https://api.themoviedb.org/3/search/movie?api_key=2e4bf3ae7a9007a8ff8ac9fbfdeb67d5&language=en-US&query=samurai&page=1&include_adult=true')
         .then(res => listMovies(moviesDiv, res.body.results))
@@ -558,8 +556,8 @@
                 wrapAround: true    
             });
         }
-    </script>
-    <script>
+
+        // Gets tv series posters from the TMDB app.
         var tvDiv = document.querySelector('#tvPage')
         zlFetch('https://api.themoviedb.org/3/search/tv?api_key=2e4bf3ae7a9007a8ff8ac9fbfdeb67d5&language=en-US&query=samurai&page=1')
         .then(res => listTV(tvDiv, res.body.results))
@@ -584,8 +582,8 @@
                 wrapAround: true    
             });
         }
-    </script>
-    <script>
+
+        // Gets book volume covers from the Google Books app.
         var booksDiv = document.querySelector('#booksPage')
         zlFetch('https://www.googleapis.com/books/v1/volumes?q=samurai&printType=books&maxResults=15&key=AIzaSyAwLGxNQqntI0-yaJ5DeFbudX_DrugiUK8')
         .then(res => listBooks(booksDiv, res.body.items))

@@ -193,7 +193,8 @@ body, html {
 }
 
 #parallax8 {
-    background-image: url('http://jpninfo.com/wp-content/uploads/2015/08/ukiyoe-print1.jpg')
+    background-image: url('https://i.etsystatic.com/5599270/r/il/219dd3/442526058/il_570xN.442526058_qtqg.jpg');
+    background-position-y: center;
 }
 
 #parallax9 {
